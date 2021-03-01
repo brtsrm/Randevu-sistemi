@@ -189,8 +189,6 @@ export default {
   mounted() {
     axios.get("http://127.0.0.1:8000/api/working-hours").then((res) => {
       this.workingHours = res.data;
-      
-      console.log(this.workingHours);
     });
   },
   methods: {
